@@ -8,13 +8,13 @@
 import Foundation
 import CoreMedia
 
-class Item {
-    var brand = ""
-    var category = CategoryEnum.Casual //Casual is just a default category?
-    var color = ""
-    var dateupload = ""
-    var imgurl = ""
-    var name = ""
+struct Item {
+    var brand: String
+    var category = CategoryEnum.Casual
+    var color: String
+    var dateupload: String
+    var imgurl: String
+    var name: String
     
     enum CategoryEnum {
         case Summer
