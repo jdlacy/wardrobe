@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3FF9FDEE2800F4B800774802 /* UserModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FF9FDED2800F4B800774802 /* UserModel.swift */; };
+		3FF9FDF02800F62600774802 /* ItemModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FF9FDEF2800F62600774802 /* ItemModel.swift */; };
 		965A13EE27F8C19000B5399D /* WardrobeApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 965A13ED27F8C19000B5399D /* WardrobeApp.swift */; };
 		965A13F027F8C19000B5399D /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 965A13EF27F8C19000B5399D /* ContentView.swift */; };
 		965A13F227F8C19300B5399D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 965A13F127F8C19300B5399D /* Assets.xcassets */; };
@@ -43,6 +45,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		3FF9FDED2800F4B800774802 /* UserModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserModel.swift; sourceTree = "<group>"; };
+		3FF9FDEF2800F62600774802 /* ItemModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemModel.swift; sourceTree = "<group>"; };
 		965A13EA27F8C19000B5399D /* Wardrobe.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Wardrobe.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		965A13ED27F8C19000B5399D /* WardrobeApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WardrobeApp.swift; sourceTree = "<group>"; };
 		965A13EF27F8C19000B5399D /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -114,6 +118,8 @@
 				965A13EF27F8C19000B5399D /* ContentView.swift */,
 				965A141927F8C42F00B5399D /* GoogleService-Info.plist */,
 				965A13F127F8C19300B5399D /* Assets.xcassets */,
+				3FF9FDED2800F4B800774802 /* UserModel.swift */,
+				3FF9FDEF2800F62600774802 /* ItemModel.swift */,
 				965A13F327F8C19300B5399D /* Preview Content */,
 			);
 			path = Wardrobe;
@@ -289,6 +295,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				965A13F027F8C19000B5399D /* ContentView.swift in Sources */,
+				3FF9FDEE2800F4B800774802 /* UserModel.swift in Sources */,
+				3FF9FDF02800F62600774802 /* ItemModel.swift in Sources */,
 				965A13EE27F8C19000B5399D /* WardrobeApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -450,6 +458,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"Wardrobe/Preview Content\"";
+				DEVELOPMENT_TEAM = WMK8Z225FW;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
@@ -457,6 +466,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -478,6 +488,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"Wardrobe/Preview Content\"";
+				DEVELOPMENT_TEAM = WMK8Z225FW;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
@@ -485,6 +496,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -616,8 +628,8 @@
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/firebase/firebase-ios-sdk";
 			requirement = {
-				branch = master;
-				kind = branch;
+				kind = upToNextMajorVersion;
+				minimumVersion = 8.0.0;
 			};
 		};
 /* End XCRemoteSwiftPackageReference section */
