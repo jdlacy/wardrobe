@@ -9,6 +9,10 @@
 /* Begin PBXBuildFile section */
 		3FF9FDEE2800F4B800774802 /* UserModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FF9FDED2800F4B800774802 /* UserModel.swift */; };
 		3FF9FDF02800F62600774802 /* ItemModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FF9FDEF2800F62600774802 /* ItemModel.swift */; };
+		3FF9FDF22811E38100774802 /* Home.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FF9FDF12811E38100774802 /* Home.swift */; };
+		3FF9FDF42811E38F00774802 /* Wardrobe.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FF9FDF32811E38F00774802 /* Wardrobe.swift */; };
+		3FF9FDFA2811E94A00774802 /* TabBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FF9FDF92811E94A00774802 /* TabBarView.swift */; };
+		3FF9FDFC2811EB2900774802 /* Closet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FF9FDFB2811EB2900774802 /* Closet.swift */; };
 		964D59FD2800E6AE00AB2856 /* DBFunctions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 964D59FC2800E6AE00AB2856 /* DBFunctions.swift */; };
 		964D59FF2800F3DB00AB2856 /* DataModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = 964D59FE2800F3DB00AB2856 /* DataModels.swift */; };
 		965A13EE27F8C19000B5399D /* WardrobeApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 965A13ED27F8C19000B5399D /* WardrobeApp.swift */; };
@@ -57,6 +61,10 @@
 /* Begin PBXFileReference section */
 		3FF9FDED2800F4B800774802 /* UserModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserModel.swift; sourceTree = "<group>"; };
 		3FF9FDEF2800F62600774802 /* ItemModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemModel.swift; sourceTree = "<group>"; };
+		3FF9FDF12811E38100774802 /* Home.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = Home.swift; path = Wardrobe/Home.swift; sourceTree = SOURCE_ROOT; };
+		3FF9FDF32811E38F00774802 /* Wardrobe.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = Wardrobe.swift; path = Wardrobe/Wardrobe.swift; sourceTree = SOURCE_ROOT; };
+		3FF9FDF92811E94A00774802 /* TabBarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = TabBarView.swift; path = Wardrobe/TabBarView.swift; sourceTree = SOURCE_ROOT; };
+		3FF9FDFB2811EB2900774802 /* Closet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = Closet.swift; path = Wardrobe/Closet.swift; sourceTree = SOURCE_ROOT; };
 		964D59FC2800E6AE00AB2856 /* DBFunctions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DBFunctions.swift; sourceTree = "<group>"; };
 		964D59FE2800F3DB00AB2856 /* DataModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataModels.swift; sourceTree = "<group>"; };
 		965A13EA27F8C19000B5399D /* Wardrobe.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Wardrobe.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -130,6 +138,10 @@
 		964D5A02280159AE00AB2856 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				3FF9FDF12811E38100774802 /* Home.swift */,
+				3FF9FDF32811E38F00774802 /* Wardrobe.swift */,
+				3FF9FDF92811E94A00774802 /* TabBarView.swift */,
+				3FF9FDFB2811EB2900774802 /* Closet.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -349,11 +361,15 @@
 			buildActionMask = 2147483647;
 			files = (
 				964D59FD2800E6AE00AB2856 /* DBFunctions.swift in Sources */,
+				3FF9FDFA2811E94A00774802 /* TabBarView.swift in Sources */,
 				964D59FF2800F3DB00AB2856 /* DataModels.swift in Sources */,
 				965A13F027F8C19000B5399D /* ContentView.swift in Sources */,
 				3FF9FDEE2800F4B800774802 /* UserModel.swift in Sources */,
+				3FF9FDFC2811EB2900774802 /* Closet.swift in Sources */,
 				3FF9FDF02800F62600774802 /* ItemModel.swift in Sources */,
 				965A13EE27F8C19000B5399D /* WardrobeApp.swift in Sources */,
+				3FF9FDF22811E38100774802 /* Home.swift in Sources */,
+				3FF9FDF42811E38F00774802 /* Wardrobe.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

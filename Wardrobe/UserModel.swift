@@ -7,10 +7,10 @@
 
 import Foundation
 
-struct User: Codable {
-    var username: String
-    var email: String
-    var fname: String
-    var lname: String
-    var dob: String
-}
+//struct User: Codable {
+  //  var username: String
+    //var email: String
+    //var fname: String
+    //var lname: String
+    //var dob: String
+//}
