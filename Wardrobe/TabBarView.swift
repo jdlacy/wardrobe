@@ -23,7 +23,7 @@ struct TabBarView: View {
                 .tag(0)
             Wardrobe()
                 .tabItem {
-                    Label("Wardrobe", systemImage: "house")
+                    Label("Wardrobe", systemImage: "tshirt.fill")
                 }
                 .tag(1)
             Closet()

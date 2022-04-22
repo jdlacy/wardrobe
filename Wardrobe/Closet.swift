@@ -9,7 +9,20 @@ import SwiftUI
 
 struct Closet: View {
     var body: some View {
-        Text("Closet View")
+        Text("Your Closet")
+        
+        VStack() {
+            Text("Head")
+                .padding()
+            Text("Torso")
+                .padding()
+            Text("Legs")
+                .padding()
+            Text("Feet")
+                .padding()
+            Text("Accessories")
+                .padding()
+        }
     }
 }
 
