@@ -6,6 +6,7 @@
 //
 
 import SwiftUI
+import Firebase
 import FirebaseAuth
 
 class APPViewModel: ObservableObject {
@@ -33,7 +34,7 @@ class APPViewModel: ObservableObject {
     
     func signUp(email: String, password: String) {
         auth.createUser(withEmail: email,
-                        password: password) {[weak self] result,
+                        password: password) { [weak self] result,
                 error in
             guard result != nil, error == nil else {
                 return
@@ -84,8 +85,8 @@ struct ContentView: View {
 }
 
 struct SignInView: View {
-    @State var email = " "
-    @State var password = " "
+    @State var email = ""
+    @State var password = ""
     @EnvironmentObject var viewModel: APPViewModel
     
    var body: some View {
@@ -139,8 +140,8 @@ struct SignInView: View {
 }
 
 struct SignUpView: View {
-    @State var email = " "
-    @State var password = " "
+    @State var email = ""
+    @State var password = ""
     @EnvironmentObject var viewModel: APPViewModel
     
    var body: some View {
