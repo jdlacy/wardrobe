@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		57A55870F73E649A29E3A984 /* Pods_Wardrobe.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8BBA72EAEAD9F0E7ED18377A /* Pods_Wardrobe.framework */; };
+		964D59FD2800E6AE00AB2856 /* DBFunctions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 964D59FC2800E6AE00AB2856 /* DBFunctions.swift */; };
+		964D59FF2800F3DB00AB2856 /* DataModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = 964D59FE2800F3DB00AB2856 /* DataModels.swift */; };
 		965A13EE27F8C19000B5399D /* WardrobeApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 965A13ED27F8C19000B5399D /* WardrobeApp.swift */; };
 		965A13F027F8C19000B5399D /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 965A13EF27F8C19000B5399D /* ContentView.swift */; };
 		965A13F227F8C19300B5399D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 965A13F127F8C19300B5399D /* Assets.xcassets */; };
@@ -41,6 +43,8 @@
 		25B99E7824C8F9F812E5DAA9 /* Pods-Wardrobe.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Wardrobe.release.xcconfig"; path = "Target Support Files/Pods-Wardrobe/Pods-Wardrobe.release.xcconfig"; sourceTree = "<group>"; };
 		4B61404AD236DC5E5FDBFCFE /* Pods-Wardrobe.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Wardrobe.debug.xcconfig"; path = "Target Support Files/Pods-Wardrobe/Pods-Wardrobe.debug.xcconfig"; sourceTree = "<group>"; };
 		8BBA72EAEAD9F0E7ED18377A /* Pods_Wardrobe.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Wardrobe.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		964D59FC2800E6AE00AB2856 /* DBFunctions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DBFunctions.swift; sourceTree = "<group>"; };
+		964D59FE2800F3DB00AB2856 /* DataModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataModels.swift; sourceTree = "<group>"; };
 		965A13EA27F8C19000B5399D /* Wardrobe.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Wardrobe.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		965A13ED27F8C19000B5399D /* WardrobeApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WardrobeApp.swift; sourceTree = "<group>"; };
 		965A13EF27F8C19000B5399D /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -88,6 +92,28 @@
 				25B99E7824C8F9F812E5DAA9 /* Pods-Wardrobe.release.xcconfig */,
 			);
 			path = Pods;
+
+		964D5A002800F3E300AB2856 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				964D59FE2800F3DB00AB2856 /* DataModels.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		964D5A012800F3FE00AB2856 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				964D59FC2800E6AE00AB2856 /* DBFunctions.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		964D5A02280159AE00AB2856 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 		965A13E127F8C19000B5399D = {
@@ -115,8 +141,11 @@
 		965A13EC27F8C19000B5399D /* Wardrobe */ = {
 			isa = PBXGroup;
 			children = (
+				964D5A02280159AE00AB2856 /* Views */,
 				965A13ED27F8C19000B5399D /* WardrobeApp.swift */,
 				965A13EF27F8C19000B5399D /* ContentView.swift */,
+				964D5A012800F3FE00AB2856 /* Controllers */,
+				964D5A002800F3E300AB2856 /* Models */,
 				965A13F127F8C19300B5399D /* Assets.xcassets */,
 				E9037A8E2813C13600DD170F /* GoogleService-Info.plist */,
 				965A13F327F8C19300B5399D /* Preview Content */,
@@ -339,6 +368,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				964D59FD2800E6AE00AB2856 /* DBFunctions.swift in Sources */,
+				964D59FF2800F3DB00AB2856 /* DataModels.swift in Sources */,
 				965A13F027F8C19000B5399D /* ContentView.swift in Sources */,
 				965A13EE27F8C19000B5399D /* WardrobeApp.swift in Sources */,
 			);
