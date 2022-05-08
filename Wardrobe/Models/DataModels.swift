@@ -15,3 +15,13 @@ public struct User: Codable {
     let lname: String
     let dob: Date
 }
+
+public struct Clothing {
+    let uid: UUID
+    let name: String
+    let brand: String
+    let category: String
+    let color: String
+    let date_upld: Date
+    let img: String
+}
