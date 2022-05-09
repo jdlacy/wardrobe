@@ -25,6 +25,7 @@
 		965A141A27F8C42F00B5399D /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 965A141927F8C42F00B5399D /* GoogleService-Info.plist */; };
 		965A141B27F8C42F00B5399D /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 965A141927F8C42F00B5399D /* GoogleService-Info.plist */; };
 		965A141C27F8C42F00B5399D /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 965A141927F8C42F00B5399D /* GoogleService-Info.plist */; };
+		E97C82952825C1D0004BB1D5 /* ImageC_contentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E97C82942825C1D0004BB1D5 /* ImageC_contentView.swift */; };
 		E9B15F1427FE1CA9001D4275 /* FirebaseAnalytics in Frameworks */ = {isa = PBXBuildFile; productRef = E9B15F1327FE1CA9001D4275 /* FirebaseAnalytics */; };
 		E9B15F1627FE1CA9001D4275 /* FirebaseAnalyticsWithoutAdIdSupport in Frameworks */ = {isa = PBXBuildFile; productRef = E9B15F1527FE1CA9001D4275 /* FirebaseAnalyticsWithoutAdIdSupport */; };
 		E9B15F1827FE1CA9001D4275 /* FirebaseAppCheck in Frameworks */ = {isa = PBXBuildFile; productRef = E9B15F1727FE1CA9001D4275 /* FirebaseAppCheck */; };
@@ -78,6 +79,7 @@
 		965A140827F8C19400B5399D /* WardrobeUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WardrobeUITests.swift; sourceTree = "<group>"; };
 		965A140A27F8C19400B5399D /* WardrobeUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WardrobeUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		965A141927F8C42F00B5399D /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		E97C82942825C1D0004BB1D5 /* ImageC_contentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageC_contentView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -179,6 +181,7 @@
 				3FF9FDED2800F4B800774802 /* UserModel.swift */,
 				3FF9FDEF2800F62600774802 /* ItemModel.swift */,
 				965A13F327F8C19300B5399D /* Preview Content */,
+				E97C82942825C1D0004BB1D5 /* ImageC_contentView.swift */,
 			);
 			path = Wardrobe;
 			sourceTree = "<group>";
@@ -360,6 +363,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E97C82952825C1D0004BB1D5 /* ImageC_contentView.swift in Sources */,
 				964D59FD2800E6AE00AB2856 /* DBFunctions.swift in Sources */,
 				3FF9FDFA2811E94A00774802 /* TabBarView.swift in Sources */,
 				964D59FF2800F3DB00AB2856 /* DataModels.swift in Sources */,

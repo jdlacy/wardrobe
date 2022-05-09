@@ -131,8 +131,15 @@ struct SignInView: View {
                 .padding()
                 Spacer()
             }
-            .navigationTitle("Sign In")
-            .foregroundColor(Color.black)
+            .navigationBarTitleDisplayMode(.inline)
+            .toolbar {
+                ToolbarItem(placement: .principal) {
+                    Text("Sign In")
+                        .font(.largeTitle.bold())
+                        .accessibilityAddTraits(.isHeader)
+                }
+            }
+            .foregroundColor(Color.red)
             .background(Image("Wardrobe_BG"))
     }
         
@@ -182,8 +189,15 @@ struct SignUpView: View {
                 .padding()
                 Spacer()
             }
-            .navigationTitle("Create account")
-            .foregroundColor(Color.black)
+            .navigationBarTitleDisplayMode(.inline)
+            .toolbar {
+                ToolbarItem(placement: .principal) {
+                    Text("Sign Up")
+                        .font(.largeTitle.bold())
+                        .accessibilityAddTraits(.isHeader)
+                }
+            }
+            .foregroundColor(Color.red)
             .background(Image("Wardrobe_BG"))
     }
         
