@@ -18,6 +18,7 @@
 		965A141A27F8C42F00B5399D /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 965A141927F8C42F00B5399D /* GoogleService-Info.plist */; };
 		965A141B27F8C42F00B5399D /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 965A141927F8C42F00B5399D /* GoogleService-Info.plist */; };
 		965A141C27F8C42F00B5399D /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 965A141927F8C42F00B5399D /* GoogleService-Info.plist */; };
+		E97C82952825C1D0004BB1D5 /* ImageC_contentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E97C82942825C1D0004BB1D5 /* ImageC_contentView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +54,7 @@
 		965A140A27F8C19400B5399D /* WardrobeUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WardrobeUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		965A141927F8C42F00B5399D /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		E9037A8E2813C13600DD170F /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../Downloads/GoogleService-Info.plist"; sourceTree = "<group>"; };
+		E97C82942825C1D0004BB1D5 /* ImageC_contentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageC_contentView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -120,6 +122,7 @@
 				965A13F127F8C19300B5399D /* Assets.xcassets */,
 				E9037A8E2813C13600DD170F /* GoogleService-Info.plist */,
 				965A13F327F8C19300B5399D /* Preview Content */,
+				E97C82942825C1D0004BB1D5 /* ImageC_contentView.swift */,
 			);
 			path = Wardrobe;
 			sourceTree = "<group>";
@@ -339,6 +342,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E97C82952825C1D0004BB1D5 /* ImageC_contentView.swift in Sources */,
 				965A13F027F8C19000B5399D /* ContentView.swift in Sources */,
 				965A13EE27F8C19000B5399D /* WardrobeApp.swift in Sources */,
 			);
