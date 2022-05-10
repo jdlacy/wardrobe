@@ -1,17 +1,17 @@
 //
-//  DataModels.swift
+//  UserModel.swift
 //  Wardrobe
 //
-//  Created by Jason on 4/8/22.
+//  Created by Student Account on 4/8/22.
 //
 
 import Foundation
-import FirebaseFirestore
 
-public struct User: Codable {
+struct User: Codable {
+    let uid: UUID
     let username: String
     let email: String
     let fname: String
     let lname: String
-    let dob: Date
+    let dob: String
 }

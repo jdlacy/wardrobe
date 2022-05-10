@@ -9,12 +9,13 @@ import Foundation
 import CoreMedia
 
 struct Item {
-    var brand: String
-    var category = CategoryEnum.Casual
-    var color: String
-    var dateupload: String
-    var imgurl: String
-    var name: String
+    let uid: UUID
+    let brand: String
+    let category = CategoryEnum.Casual
+    let color: String
+    let dateupload: String
+    let imgurl: String
+    let name: String
     
     enum CategoryEnum {
         case Summer
