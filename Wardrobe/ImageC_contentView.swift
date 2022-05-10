@@ -10,7 +10,7 @@ import SwiftUI
 struct ImageC_contentView: View {
     
     private func getScale(proxy: GeometryProxy) -> CGFloat {
-        var scale: CGFloat = 2
+        let scale: CGFloat = 2
         return scale
     }
     var body: some View {
