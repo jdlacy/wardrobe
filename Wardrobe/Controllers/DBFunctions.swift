@@ -33,8 +33,10 @@ func addNewUser(user: User) {
     newCloset(username: user.username)
 }
 
+
+
 private func newCloset(username:String) {
-    let mycloset = db.collection("users").document(username).collection("closet").document("mycloset")
+    let mycloset = db.collection("users").document("\(username)").collection("closet").document("mycloset")
     mycloset.collection("accessories")
     mycloset.collection("feet")
     mycloset.collection("head")
@@ -42,21 +44,49 @@ private func newCloset(username:String) {
     mycloset.collection("torso")
 }
 
-func addClothing(category:String, item: Item) {
-    let userRef = user?.uid
-    let storageRef = storage.reference()
-    let collection = db.collection("users").document(user!.uid as String).collection("closet").document("mycloset").collection(category)
-    let closet = db.collection("users").document(user!.uid as String)
+func addClothing(category:String, item:Item, image: UIImage, name:String, username:String) {
+    let userCollection = db.collection("users").document("\(username)").collection("closet").document("mycloset").collection("\(category)")
+    let itemName = item.name
+    let imageRef = storage.reference().child("\(String(describing: user?.uid))/photos")
+    let imageURL: Void = imageRef.downloadURL { url, error in
+        if let error = error{
+            print("Error fetching URL: \(error.localizedDescription)")
+        } else {
+            imageRef.child("/\(name)")
+        }
+        
+    }
+    uploadPhoto(image: image, name: name)
     
-    collection.document(item.name).setData([
-        "name": item?.name,
-        "uid": item?.uid as String,
-        "brand": item?.brand,
-        "category": item?.category,
-        "color": item?.color,
-        "date_upld": item?.dateupload,
-        "img": item?.imgurl
+    
+    userCollection.document("\(itemName)").setData([
+        "name": item.name,
+        "uid": item.uid,
+        "brand": item.brand,
+        "category": item.category,
+        "color": item.color,
+        "date_upload": item.dateupload,
+        "img": imageURL
     ])
+    
+    
+    
+}
+
+func uploadPhoto(image:UIImage, name:String) {
+    let userFolder = user?.uid
+    if let imageData = image.jpegData(compressionQuality: 1) {
+        storage.reference().child("\(String(describing: userFolder))/photos").putData(imageData, metadata: nil){
+            (_, err) in
+            if let err = err {
+                print("Error uploading photo: \(err.localizedDescription)")
+            } else {
+                print("Upload successful")
+            }
+        }
+    } else {
+        print("Couldn't unwrap/case image to data")
+    }
 }
 
 func updateClothing() {}
